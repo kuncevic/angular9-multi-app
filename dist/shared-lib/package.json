@@ -1,0 +1,31 @@
+{
+  "name": "shared-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.0-rc.1",
+    "@angular/core": "^9.0.0-rc.1",
+    "tslib": "^1.10.0"
+  },
+  "main": "bundles/shared-lib.umd.js",
+  "module": "fesm5/shared-lib.js",
+  "es2015": "fesm2015/shared-lib.js",
+  "esm5": "esm5/shared-lib.js",
+  "esm2015": "esm2015/shared-lib.js",
+  "fesm5": "fesm5/shared-lib.js",
+  "fesm2015": "fesm2015/shared-lib.js",
+  "typings": "shared-lib.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1",
+    "prepublishOnly__ivy_ngcc_bak": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  },
+  "__processed_by_ivy_ngcc__": {
+    "fesm2015": "9.0.0-rc.1",
+    "fesm5": "9.0.0-rc.1",
+    "es2015": "9.0.0-rc.1",
+    "esm2015": "9.0.0-rc.1",
+    "esm5": "9.0.0-rc.1",
+    "main": "9.0.0-rc.1",
+    "module": "9.0.0-rc.1"
+  }
+}
